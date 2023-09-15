@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Cyntho Next';
+    src: url('fonts/CynthoNext-Medium.eot');
+    src: local('Cyntho Next Medium'), local('CynthoNext-Medium'),
+        url('fonts/CynthoNext-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CynthoNext-Medium.woff2') format('woff2'),
+        url('fonts/CynthoNext-Medium.woff') format('woff'),
+        url('fonts/CynthoNext-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cyntho Next';
+    src: url('fonts/CynthoNext-SemiBold.eot');
+    src: local('Cyntho Next SemiBold'), local('CynthoNext-SemiBold'),
+        url('fonts/CynthoNext-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CynthoNext-SemiBold.woff2') format('woff2'),
+        url('fonts/CynthoNext-SemiBold.woff') format('woff'),
+        url('fonts/CynthoNext-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    color: #061E21;
+    font-family: Cyntho Next;
+    
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1804px;
+}
+
+.deadlines {
+    padding: 150px 0;
+}
+
+.deadlines h2 {
+font-size: 52.3px;
+font-weight: 500;
+letter-spacing: -0.523px;
+}
+
+.deadlines__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deadlines__teasers {
+    width: 1201px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.deadlines__teaser {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 40px;
+    flex: 0 0 48%;
+    border-top: 1px solid #D9D9D9;
+}
+
+.deadline__icon {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.deadline__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.deadline__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: 0.7px;
+}
+
+.deadline__descr {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1380px;
+    }
+
+    .deadlines h2 {
+        font-size: 46px;
+    }
+
+    .deadlines__teasers {
+        width: 883px;
+    }
+
+    .deadlines__teaser {
+        flex: 0 0 48%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 690px;
+    }
+
+    .deadlines {
+        padding: 100px 0;
+    }
+
+    .deadlines h2 {
+        font-size: 32px;
+        margin-bottom: 51px;
+    }
+
+    .deadlines__block {
+        flex-direction: column;
+    }
+
+    .deadlines__teasers {
+        width: 100%;
+        gap: 40px 16px;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .deadlines__teaser {
+        flex: 0 0 30%;
+    }
+
+    .deadline__title {
+        font-size: 24px;
+        letter-spacing: -0.24px;
+    }
+
+    .deadline__descr {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        max-width: 335px;
+
+    }
+    .deadlines h2 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .deadlines__teasers {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .deadlines__teaser {
+        padding-top: 32px;
+        gap: 32px;
+        flex: unset;
+        width: 100%;
+        
+    }
+
+    .deadline__text {
+        gap: 8px;
+    }
+
+    .deadline__title {
+        font-size: 18px;
+        letter-spacing: -0.18px;
+    }
+
+    .deadline__descr {
+        font-size: 12px;
+    }
+}
